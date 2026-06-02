@@ -11,10 +11,22 @@ To write a Python program that filters out and returns all elements from a list 
 4. Iterate through each word in the list:
    - Use `re.search(r"e", i)` to check if the word contains `'e'`.
    - If **not**, append the word to `l1`.
-5. Print the final filtered list.
+5. Print the final filtered list
+## Program
+```
+import re
+l1=[] 
 
-## 🧾 Program
-Add code here
+items=['goal', 'new', 'user', 'sit', 'eat', 'dinner'] 
+for i in items: 
+
+   if not re.search(r"e",i): 
+      l1.append(i) 
+
+print(l1)
+```
 ## Output
+<img width="405" height="139" alt="image" src="https://github.com/user-attachments/assets/ae7a969a-6afd-404b-b0fb-efc622f15697" />
 
 ## Result
+Thus, the program has been successfully executed.
